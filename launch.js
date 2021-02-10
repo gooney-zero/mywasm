@@ -1,3 +1,7 @@
+import "./tailwind.css";
+
+
+
 import("./pkg").then(module => {
-  module.greet("mywasm");
+  module.run_app();
 })
