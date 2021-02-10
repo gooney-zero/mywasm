@@ -1,0 +1,35 @@
+{
+  "name": "mywasm",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "张文光 <wenguangzhang@caixin.com>",
+  "license": "MIT",
+  "scripts": {
+    "dev": "cross-env NODE_ENV=development  webpack serve --config ./webpack.dev.config.js --progress --profile",
+    "build": "cross-env NODE_ENV=production webpack --config ./webpack.config.js --progress --profile",
+    "start": "webpack serve --config ./webpack.config.js --progress --profile --mode=development & wait-on tcp:8000 -v"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss7-compat": "^2.0.3",
+    "@wasm-tool/wasm-pack-plugin": "^1.3.2",
+    "autoprefixer": "^10.2.4",
+    "clean-webpack-plugin": "^3.0.0",
+    "copy-webpack-plugin": "^7.0.0",
+    "cross-env": "^7.0.3",
+    "css-loader": "^5.0.2",
+    "css-minimizer-webpack-plugin": "^1.2.0",
+    "cssnano-preset-advanced": "^4.0.7",
+    "html-webpack-plugin": "^5.0.0",
+    "mini-css-extract-plugin": "^1.3.6",
+    "postcss": "^8.2.5",
+    "postcss-loader": "^5.0.0",
+    "style-loader": "^2.0.0",
+    "tailwindcss": "^2.0.3",
+    "wait-on": "^5.2.1",
+    "wasm-pack": "^0.9.1",
+    "webpack": "^5.21.2",
+    "webpack-cli": "^4.5.0",
+    "webpack-dev-server": "^3.11.2",
+    "webpack-merge": "^5.7.3"
+  }
+}
