@@ -1,5 +1,21 @@
 
 /*! @import */
-/* @tailwind base; */
+@tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.min-c {
+  min-height: calc(100vh - 3.5rem);
+}
+
+.text-sm-o {
+  @apply text-sm;
+}
+
+.text-black-o {
+  @apply text-black;
+}
+
+.rounded-none-o {
+  @apply rounded-none;
+}

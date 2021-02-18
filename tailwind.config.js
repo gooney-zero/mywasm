@@ -6,9 +6,12 @@ module.exports = {
     content: ["./public/index.html", "./src/**/*.rs"]
   },
   darkMode: false, // or 'media' or 'class'
-  // theme: {
-  //   extend: {}
-  // },
+  theme: {
+    minHeight: {
+      "min-c": "calc(100vh - 3.5rem)",
+    },
+    extend: {}
+  },
   variants: {
     extend: {}
   },

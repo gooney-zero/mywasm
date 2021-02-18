@@ -5,4 +5,9 @@ const base = require("./webpack.base.config");
  */
 module.exports = merge(base, {
   mode: 'development',
+  devServer: {
+    historyApiFallback: true,
+    open: true,
+    port: 8080,
+  }
 });

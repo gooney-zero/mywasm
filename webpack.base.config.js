@@ -10,7 +10,6 @@ const distPath = path.resolve(__dirname, "dist");
  * @type {import("webpack")}
  */
 module.exports = {
-  // devtool: process.env.NODE_ENV === 'production' ? 'source-map' : 'inline-source-map', // 官方推荐生产环境和开发环境的配置
   entry: './launch.js',
   output: {
     path: distPath,

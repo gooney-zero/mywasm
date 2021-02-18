@@ -1,12 +1,16 @@
-// extern crate wasm_bindgen;
 
-// mod components;
-mod app;
+#![recursion_limit = "1024"]
+pub mod app;
+pub mod routes;
+pub mod pages;
+pub mod components;
 use wasm_bindgen::prelude::*;
+use yew::App;
 
-// This is the entry point for the web app
+
 #[wasm_bindgen]
-pub fn run_app() -> Result<(), JsValue> {
-    yew::start_app::<app::App>();
-    Ok(())
+pub fn run_app() {
+    // yew::start_app::<app::App>();
+    App::<app::AppRoot>::new().mount_to_body();
+    // Ok(())
 }
