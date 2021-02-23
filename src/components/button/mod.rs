@@ -67,7 +67,7 @@ impl Button {
       ButtonType::Danger => format!("{} {}", self.set_plain_danger_classes(), classes_type),
     };
     let classes_base = "outline-none focus:outline-none inline-block box-border h-11 m-0 p-0 text-base text-center rounded-sm cursor-pointer transition-opacity";
-    let classes = &mut format!("{} {} {} {}",classes_base, classes_type,classes_normal, self.props.classes.clone());
+    let classes = &mut format!("{} {} {} {}",classes_base, classes_type,classes_normal, self.props.class.clone());
     if self.props.disabled {
       classes.push_str(" opacity-50 cursor-not-allowed");
     }

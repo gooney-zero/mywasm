@@ -8,7 +8,7 @@ pub struct ButtonProps {
   pub button_type: ButtonType,
   pub text: String,
   #[prop_or(String::new())]
-  pub classes: String,
+  pub class: String,
   #[prop_or(String::new())]
   pub style: String,
   #[prop_or(false)]
